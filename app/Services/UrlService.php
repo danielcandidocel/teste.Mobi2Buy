@@ -45,7 +45,7 @@ class UrlService
 
     /**
      * @param string $shortened
-     * @return false|Builder|Model|object
+     * @return Builder|Model|object
      * @throws ValidationException
      */
     public function findUrl(string $shortened)

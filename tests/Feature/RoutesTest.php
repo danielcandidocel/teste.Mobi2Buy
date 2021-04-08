@@ -85,7 +85,7 @@ class RoutesTest extends TestCase
     {
         $shortened = Str::random(6);
         $this->post('/api/url', [
-            'url_complete'      => 'http://www.globo.com',
+            'url_complete'      => 'https://mobi2buy.com/',
             'shortened'         => $shortened,
             'expiration_date'   => now()->addDays(-7)
         ]);
@@ -112,7 +112,7 @@ class RoutesTest extends TestCase
     public function providersNewUrlShortened($shortened): TestResponse
     {
         return $this->post('/api/url', [
-            'url_complete'      => 'http://www.globo.com',
+            'url_complete'      => 'https://mobi2buy.com/',
             'shortened'         => $shortened,
             'expiration_date'   => now()->addDays(7)
         ]);
