@@ -1,4 +1,4 @@
-<p align="center"><a href="https://mobi2buy.com/" target="_blank"><img src="https://mobi2buy.com/images/logo.png" width="400"></a></p>
+<p align="center"><a href="https://mobi2buy.com/" target="_blank"><img src="https://pbs.twimg.com/profile_images/1058010452993720323/LozjSIla.jpg" width="400"></a></p>
 
 ## Sobre o Teste
 
@@ -63,23 +63,23 @@ A listagem de URLs deverá possuir paginação, a forma de paginação é de liv
 - php artisan migrate
 - php artisan db:seed UserSeeder
     - Usuário padrão:
-        - email: test@gmail.com
-        - senha: 123456
+        -       email: test@gmail.com
+        -       senha: 123456
 - Seguir o exemplo do .env.example
 
 ## Endpoints
 - /api/url
     - Método: POST
     - Parâmetros: 
-        - url_complete: URL original (url, required)
-        - expiration_date: Data de expiração (date(y-m-d), nullable, padrão 7 dias)
-        - shortened: URL encurtada (string, nullable, padrão random)
+        -       url_complete: URL original (url, required)
+        -       expiration_date: Data de expiração (date(y-m-d), nullable, padrão 7 dias)
+        -       shortened: URL encurtada (string, nullable, padrão random)
     - Retorno:
-        - json (url(url encurtada))
+        -       json (url(url encurtada))
 - /api/u/{SHORTENED}
     - Método: GET
     - Retorno:
-       - success: redireciona para a URL original
+       -     success: redireciona para a URL original
        -     error: retorna erro 404 em caso de shortened inexistente ou expirado
         
 
